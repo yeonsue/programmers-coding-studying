@@ -1,0 +1,15 @@
+def solution(participant, completion):
+    a=[]
+    i=0
+    participant.sort()
+    completion.sort()
+    completion.append("수현")
+    while True:
+        if participant[i]==completion[i]:
+            i=i+1
+        else:
+            a.append(participant[i])
+            break
+    
+    answer = str(a[0])
+    return answer
